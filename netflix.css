@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+  }
+  
+  
+  .navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    z-index: 10;
+  }
+  
+  .navbar_logo {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .language {
+    background: transparent;
+    border: none;
+    color: white;
+  }
+  
+  .language:focus {
+    outline: none;
+  }
+  
+  .language option {
+    background-color: black;
+  }
+  
+  .dropdown {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .signin_button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    font-size:1.2rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor:pointer ;
+  }
+  
+  .nav_items {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .main {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+  }
+  
+  .main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+  }
+  
+  
+  .hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 12px;
+    padding: 0 0px;
+  }
+  
+  
+  .hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+    margin: 0% 3%;
+  }
+  
+  .hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin: 0% 4%;
+  }
+  
+  .btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid rgb(235, 8, 8);
+    cursor: pointer;
+    transition: all 0.4s;
+  
+  }
+  
+  .btn:hover{
+    background-color: rgb(149, 3, 3);
+    border: 1px solid rgb(149, 3, 3);
+  }
+  
+  .btn-red {
+    background-color: red;
+    color: white;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 100;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .hero_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+  }
+  
+  .main input {
+    padding: 12px 101px 12px 14px;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.5);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+  }
+  
+  .email_input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding-left: 7px;
+  }
+  
+  .email_label {
+  /* color: black; */
+  position: absolute;
+  top: 32%;
+  left: 5%;
+  color: rgb(153, 149, 149);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s;
+  }
+  
+  .form_container {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  }
+  
+  .email_input:focus + .email_label {
+  top: 0.2rem;
+  font-size: 10px;
+  }
+  
+  
+  .email_input:focus-visible {
+  outline: none;
+  }
+    
+  .primary_button {
+      background-color: #dc030f;
+      border: 1px solid #dc030f;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 2px;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+    
+    .f {
+      border-top: 8px solid #222;
+      padding: 2rem 1rem;
+    }
+    
+    .f_details {
+      text-align: center;
+    }
+    
+    .f_title {
+      font-size: 25px;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+    
+    .f_sub_title {
+      font-size: 15px;
+      font-weight: 400;
+    }
+    
+    .f_image_container {
+      width: 100%;
+      position: relative;
+    }
+    .f_image {
+      width: 100%;
+    }
+    
+    .f_bg_video_container {
+      position: absolute;
+      width: 100%;
+      top: 20%;
+      left: 13%;
+      height: 100%;
+      max-width: 73%;
+      max-height: 54%;
+      z-index: -2;
+    }
+    
+    .f_bg_video {
+      width: 100%;
+    }
+    
+    .f_2_pot_container {
+      position: absolute;
+      bottom: 8%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 16em;
+      display: flex;
+      align-items: center;
+      background-color: black;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      border-radius: 10px;
+      height: 60px;
+      padding: 0.25rem 0.6rem;
+      gap: 15px;
+    }
+    
+    .pot_container {
+      width: 20%;
+    }
+    
+    .pot {
+      width: 100%;
+      height: 100%;
+    }
+    .pd {
+      width: 60%;
+    }
+    .pd > h4 {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .pd > h6 {
+      font-size: 12px;
+      font-weight: 400;
+      color: rgb(63, 63, 246);
+    }
+    
+    .dg_container {
+      width: 20%;
+      height: 100%;
+    }
+    .gif {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .f_3_bg_video_container {
+      max-width: 63%;
+      max-height: 47%;
+      z-index: -2;
+      top: 9%;
+      left: 19%;
+    }
+  
+    .faq h2 {
+      text-align: center;
+      font-size: 48px;
+  }
+  
+  .faq {
+      background: black;
+      color: white;
+      padding: 15px;
+      border-top: 8px solid #222;
+  
+  }
+  
+  .faqbox:hover {
+      background-color: #414141;
+      color: white;
+  }
+  
+  
+  .faqbox {
+      transition: all 1s ease-out;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #2d2d2d;
+      padding: 14px;
+      max-width: 60vw;
+      margin: 10px auto;
+      cursor: pointer;
+  }
+  
+  .p{
+    font-size: 1.2rem;
+    margin: 1%;
+  }
+  
+  .last_form{
+    text-align: center;
+  
+  }
+  
+  .last{
+    margin: 15px 0% 50px 25%;
+   }
+  
+  .email{
+    background-color:#333;
+    border-radius: 4px;
+    margin-left: 2%;
+    padding: 1%;
+   }
+  
+    footer {
+      border-top: 8px solid #333;
+      padding: 2rem 1rem;
+      color: #757575;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .footer_row_2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    
+    .footer_row_1 > h4 {
+      font-size: 25px;
+      font-weight: 500;
+    }
+    
+    .footer_row_3 > .dropdown_container {
+      width: fit-content;
+      border: 1px solid #757575;
+      color: #757575;
+    }
+    
+    .footer_row_3 > .dropdown_container > .language_drop_down {
+      color: #757575;
+    }
+    
+    @media (max-width: 868px) {
+  
+  
+      .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+  
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+  
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+  
+    .hero_buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+  
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+  
+      .f {
+        padding: 4rem;
+      }
+    
+      .f_title {
+        font-size: 35px;
+      }
+    
+      .f_sub_title {
+        font-size: 20px;
+      }
+      .f_2_pot_container {
+        max-width: 26em;
+        height: 85px;
+      }
+      .pot_container {
+        width: 15%;
+      }
+      .dg_container {
+        width: 3rem;
+        height: 3rem;
+      }
+    
+      .pd > h4 {
+        font-size: 18px;
+      }
+      .pd > h6 {
+        font-size: 14px;
+      }
+      .footer_row_3 {
+        align-self: flex-start;
+        
+      }
+      .signin_button{
+        font-size: small;
+        padding: 10px 10px 10px 5px;
+      }
+  
+      .footer_row_3 {
+        align-self: flex-start;
+      }
+    
+    }
+    
+    @media (min-width: 900px) {
+      .navbar {
+        padding: 2% 10%;
+      }
+  
+      .hero> :nth-child(1) {
+        margin: 0% 15%;
+      }
+    
+      .dropdown_container {
+        padding: 10px 5px;
+      }
+    
+      .form_container {
+        width: 50%;
+      }
+  
+      .primary_button {
+        height: 50px;
+      }
+    
+      .f {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+    
+      .f_details {
+        text-align: left;
+        padding: 0 6rem;
+      }
+    
+      .f_title {
+        font-size: 50px;
+      }
+    
+      .f_sub_title {
+        font-size: 25px;
+      }
+    
+      .f_image_container {
+        max-width: 500px;
+      }
+    
+      .f:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    
+      .f_2_pot_container {
+        max-width: 20em;
+        height: 100px;
+        padding: 1rem;
+      }
+      .pot_container {
+        width: 20%;
+      }
+   
+      footer {
+        padding: 2rem 10rem;
+        justify-content: flex-start;
+        text-align: left;
+      }
+    
+      .footer_row_3 {
+        align-self: flex-start;
+        padding: 0rem 4rem;
+      }
+    
+    }
+    
