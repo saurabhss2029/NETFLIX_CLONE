@@ -1,0 +1,1 @@
+This project is a Netflix Clone built using HTML, CSS, and JavaScript.<br> The primary goal of this project is to replicate the user interface (UI) of the popular streaming platform, Netflix. It includes a responsive design that adjusts to various screen sizes, offering a sleek and modern look similar to the original Netflix website.
